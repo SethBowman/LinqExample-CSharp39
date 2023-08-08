@@ -78,7 +78,7 @@ dog3.Age = 1;
 var dogPound = new List<Dog>() { dog1, dog3, dog2 };
 
 
-var sortedDogs = dogPound.OrderBy(dog => dog.Name);
+var sortedDogs = dogPound.OrderBy(dog => dog.Name).ThenBy(dog.Age);
 
 
 foreach(var dog in sortedDogs)
